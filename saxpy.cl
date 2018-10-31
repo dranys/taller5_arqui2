@@ -1,4 +1,4 @@
-__kernel void saxpy(__global const int *A, __global const int *B, __global int *C,  __global const int *saxpyNumber) {
+__kernel void saxpy(__global const long *A, __global const long *B, __global long *C,  __global const long *saxpyNumber) {
  
     // Get the index of the current element to be processed
     int i = get_global_id(0);
